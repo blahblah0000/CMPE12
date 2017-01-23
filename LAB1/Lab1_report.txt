@@ -1,0 +1,48 @@
+
+#####################################
+Lynne Diep
+Lab Section 1: T/Thurs @ 2PM TA: Chandrahas
+Due: October 2, 2016
+Lab Partner: Margaret Sit
+#####################################
+
+Title:
+Lab 1: Intro to Logic with Multimedia Logic
+
+Purpose:
+Learn how to use Multimedia Logic application in Windows to do schematic entry and simulation.
+
+Procedure:
+There was a tutorial on the basics of using MML, which ultimately had us create a simple circuit that would light up an LED when the switch was on. Part B of the lab had us recreate a schematic that was presented on the lab assignment, and to play around with the switches to get a feel of inputting binary and seeing the result on the display. Part C involved a truth table and the goal was to design logic that implements the truth table. I used product of sums to figure out the equation of the logic gates. Then I would implement my equation through logic gates and test if my inputs would replicate the data on the truth table. Part D was to create a guessing game where the user would have to guess a number between 0-3, and an LED would light up if the user’s guess was correct. I created a truth table in figuring which inputs would have the 0-3 output, and used the same method in Part C of finding an equation of the logic gates. I then tested my schematic out by trying the guess the random number.
+
+Algorithms and other data:
+Regarding product of sum, whenever the output of the truth table is 1, the inputs used are part of the product of sums.
+
+For example:
+IN (2)		IN (1)		IN (0)		Output
+0		0		0		1
+1		0		0		0
+1		1		0		1
+
+The product of sums for that truth table would be:
+A’B’C’ + ABC’
+
+Using the product of sums allows us to design logic that implements the corresponding truth table.
+
+What went wrong or what were the challenges?:
+The challenges of this lab, for me, was figuring out which logic gates to use and connecting them to the LEDs. It took me a while to figure out which gates worked with my product of sums. For a moment I had over 10 gates for Part C, and I decided that those were unnecessary and started over again to make a concise and clean schematic. 
+
+Other Information:
+Think about how you would make the digit display if you didn’t have one. Write out how you would approach doing so.
+
+I would use LEDs in telling me the digit. For example 3 LEDs would light up if the number were 3. Of course the schematic would contain a lot of LEDs, so it wouldn’t be as simple as having a digit display. I would use AND and OR gates, which would count the number the switches are depicting. It would be more complicated than the original schematic, but I believe it would do its job of notifying the user of the number presented.
+
+Make some sort of guess on how that random number generator works? How can things be really random in a computer with logic gates being so, well, logical?
+
+Since computers are so intelligent, I believe the number that is generated is not necessarily random. I believe that the generator has a “random number” sequence that appears to look random. Thinking about it, the user cannot tell if the number generated is actually random or not, so maybe there is no such thing as legitimate random number generator.
+
+Conclusion:
+This lab successfully taught me how to use Multimedia Logic, and do schematic entry and simulation. I used the data from the truth table to correctly design logic that implements the table, created a guessing game as well. However, this was my first lab dealing with MML and there are many things left to learn. I look forward to see how we can use MML for future labs.
+
+Extra:
+This lab can be improved if we were given more instructions for Part C and D of the lab. It was confusing at first, but the TA and tutors significantly helped me in understanding the concepts. Additionally, my partner and I collaborated ideas on how to approach Part D and agreed to the use the truth table method with 4 inputs.
