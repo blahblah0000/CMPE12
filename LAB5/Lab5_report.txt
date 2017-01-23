@@ -1,0 +1,30 @@
+#####################################
+Lynne Diep
+Lab Section 1: T/Thurs @ 2PM
+Due: November 20, 2016
+Lab Partner: None
+#####################################
+
+Title:
+Lab 5: Introduction to Uno32 and MIPS
+
+Purpose:
+Introduce you to the basics of MIPS and running code on an embedded processor. We will do so by writing code,
+in MIPS assembly, that will light LED’s based off button presses and bounce LED’s back and forth.
+
+Procedure:
+For part 1 of the lab, we had to light the LEDs based off button presses and switches. In order to begin with this,
+we had to map out the switches, buttons, and LEDs. For example, Switch 1 had an UNO32 number of 2, which leads us to the PIC32 pin of 42, and finally gives us the ChipKit value of RD8. This process continues on for the rest of the buttons, swtiches, and LEDs. After mapping we load the switches and buttons 2-4 to PORTD, then use a bit mask and shift right to match the placement of the LEDs. Do the same process for the buttons, and align them to the proper LED spots. After we connect the LEDs and inputs by using TRISE and PORTE. Finally loop the code.
+For Part 2 of the lab, the goal is to make the LEDs bounce back and forth, like they are traveling. First we start by reading in the 4 switches and shifting them to the last 4 bits. We then make the switches as inputs, and LEDs as outputs. Additionally we add one to the switches so it could be 1-16 rather than 0-15. To make it look like the LEDs are traveling, we use delays and jal them to our loops. For me, specifically, I used a Left and Right loop to tell where the LED should travel next. For the left loop, the LED will continue to shift left once until it hits the 8 bit. For the right loop, the LED will continue to shift right once until it hits the first bit. The Left and Right loops will continue endlessly and the switches indicate how fast the LEDs would travel.
+
+Algorithms and Data:
+The data that was needed to complete the lab was definitely the ChipKit, Uno32, and PIC32 PIN charts. Without mapping the appropriate switches, buttons, and LEDs, it would be very difficult, maybe even impossible, to have the lab successfully run.
+
+What went wrong or what were the challenges?:
+The biggest challenge for me was all of Part 2 of the lab. I managed to develop a delay, read the 4 swtiches, and light LED 1. However, developing the left and right loop required a lot of time understanding how it would make the LEDs travel. Additionally, I did not understand sending in an argument for $a0. To be honest, there was no detailed background of MIPS given before starting this lab so it was tremendously difficult to start this. Thankfully, there was a lab extension.
+
+Conclusion:
+The lab did teach me the basics of MIPS and running code on an embedded processor. However, MIPS is a complicated language to understand, and I hope there will be more opportunities in lecture to understand how to implement the language. I look forward in seeing how MIPS will me used in the next lab.
+
+Extra:
+The lab was confusing at first, but the TA and tutors significantly helped me in understanding the concepts. Shout out to Isaak for helping me with part 2!
