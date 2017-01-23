@@ -1,0 +1,35 @@
+#####################################
+Lynne Diep
+Lab Section 1: T/Thurs @ 2PM
+Due: November 7, 2016
+Lab Partner: None
+#####################################
+
+Title:
+Lab 4: Caesar Cipher
+
+Purpose:
+To use sub-routines (procedures) and create a cipher.
+
+Procedure:
+The simplified version of how to create the Caesar Cipher is to create a 2x200 array first. The array should be able to store one string in normal text and the encrypted string for it. After creating the array, the program must prompt the user for the various inputs: decrypt or encrypt, the cipher number (1-25), when the user wants to quit, and the string the program will encrypt or decrypt. To store the string entered into the 2D array, using the row major or column major in row 0 will do. Next, considering the users? input, the string will be either decrypted or encrypted and stored into the 2D away in row 1. The last step is to print out the 2D array. This procedure will continue to repeat until the user inputs a ?x? to quit the program. Additionally, non-alphabetical characters (1,2,!,#,*,0?) should not be altered before the output, so these characters should remain the same.
+
+Algorithms and other data:
+Since the lab is centered on the Caesar Cipher, we have to use the Caesar Cipher algorithm. The algorithm states:
+If the character is in the alphabet and is (A-M) or (a-m), shift the character space by 13.
+Else if the character is in the alphabet and is (N-Z) or (n-z) shift the character space by 
+-13.
+This is and else state will continue to repeat until all the characters in the string are passed through. After that, then the string will print out in the appropriate characters depending on the statement. 
+
+What went wrong or what were the challenges:
+The challenge of this lab for me was creating 2x200 array and entering the users? string in the row major or column major. Before this lab I never heard of the Caesar Cipher algorithm so another challenge for me is understanding how to implement it into assembly language. Being that this lab is the 2nd one for LC-3, I still found it difficult to translate my flowchart into assembly language. However, the flowchart did organize my steps and made the process easier.
+
+Conclusion:
+This lab did test my knowledge and understanding of sub-routines, and based on the results I successfully created the Caesar Cipher in assembly language. I appreciate the 2 week deadline for this lab because I truly needed more than 1 week to understand and complete this lab.
+
+Extra:
+The TAs and tutors provided excellence guidance for this lab, and I appreciate their help!
+
+
+
+
