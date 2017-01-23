@@ -1,0 +1,29 @@
+#####################################
+Lynne Diep
+lytdiep
+Lab Section 1: T/Thurs @ 2PM
+Due: November 20, 2016
+Lab Partner: None
+#####################################
+
+Title:
+Lab 6: Decimal to Binary Converter Redux
+
+Purpose:
+Make another binary converter using MIPS. Use serial communications within the program, which will be much easier to work with. This program will read a string from memory rather than gain user input. Essentially, learn more about MIPS and its serial communications.
+
+Procedure:
+Similar to Lab 3, we will be programming a decimal to binary converter, but this time in MIPS. The first step is to create a flow chart that shows the reasoning behind the lab. I used the flow chart from Lab 3 to begin with and found out which steps could be replaced with MIPS instructions. Additionally, there was no need to multiply bit masks as compared to Lab 3, so that made the MIPS program easier to develop.
+Essentially, I translated my Lab 3, in LC-3, and translated it to MIPS for Lab 6. Also, instead of getting user input for the string, I obtained the string from memory (inNumericString). Same as Lab 3, I would check if the first character is “-“, if so the number would get inverted, and if not, the character would be converted. Additionally I was able to use the mult instruction to multiply the int by 10. For inverting negative numbers, instead of using NOT in LC-3 I used the “nor” instruction in MIPS to produce the same outcome. Each character gets put through the code, and to move on to the next character, I would shift the mask right by 1, and subtract the counter by 1. Once the counter reaches less than 0, it means the program is finished converting the numeric string. It is then stored to outBinaryString and eventually gets printed out in its binary form. 
+
+Algorithms and Data:
+The data needed from the lab was Lab 3. Lab 3 was basically the skeleton of this lab, and using MIPS, I replaced some of the “bones” in order have the LC-3 language translated to MIPS instructions. The MULT instruction definitely made the program a bit easier to develop since in LC-3, I had to use ADD in order to multiply. Additionally I had to use the “nor” instruction instead of “NOT” to invert the negative number.
+
+What went wrong or what were the challenges:
+The biggest challenge for me was print 1’s and 0’s. On piazza there was a student answer of using the “sltu” instruction to print the binary numbers. However, during lab, a TA corrected me and said that sltu would not fulfill this. Additionally I had trouble with my overall output; my CoolTerm would continuously print “Welcome to the Converter” infinite amount of times and I could not figure out how to debug the program for the longest time.
+
+Conclusion:
+This lab was definitely easier than Lab 3, most likely because we already had a base to compare it to. And the MIPS instructions made programming the lab a lot easier. MIPS is a complicated language to understand, and I am glad these past two labs have made MIPS easier to understand. 
+
+Extra:
+The TA’s and MSI instructors definitely helped me and I appreciate everything they have done this quarter! Without them, I would probably still be stuck with Lab 3! Thank you guys once again!
